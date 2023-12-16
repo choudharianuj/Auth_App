@@ -5,9 +5,12 @@ import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 import About from './pages/About'
 import Profile from './pages/Profile'
+import Header from './Components/Header'
 
 const App = () => {
   return (
+    <>
+    <Header/>
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/about' element={<About />}/>
@@ -15,6 +18,7 @@ const App = () => {
       <Route path='/signup' element={<SignUp />}/>
       <Route path='/profile' element={<Profile />}/>
     </Routes>
+    </>
   )
 }
 
